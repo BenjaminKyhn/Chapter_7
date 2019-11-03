@@ -22,7 +22,7 @@ public class Exercise_7_10b {
         double max = array[0];
         int maximumIndex = 0;
         for (int i = 1; i < array.length; i++) {
-            if (array[i] > max){
+            if (array[i] >= max){
                 max = array[i];
                 maximumIndex = i;
             }
