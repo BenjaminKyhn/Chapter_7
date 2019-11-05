@@ -36,6 +36,7 @@ public class Exercise_7_16 {
         System.out.println();
     }
 
+    // Method for calculating search time using linear search
     public static long linearSearchTime(int [] array, int key){
         long startTime = System.nanoTime();
         linearSearch(array, key);
@@ -44,6 +45,7 @@ public class Exercise_7_16 {
         return executionTime;
     }
 
+    // Method for calculating search time using binary search
     public static long binarySearchTime(int [] array, int key){
         long startTime = System.nanoTime();
         binarySearch(array, key);
