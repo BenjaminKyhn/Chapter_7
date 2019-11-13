@@ -9,9 +9,13 @@ public class Exercise_7_15c {
         int[] distinctArray = new int[0];
         for (int i = 0; i < list.length; i++) {
             if (linearSearch(distinctArray, list[i]) == -1){
+                // Make a temporary array and grow it
                 int[] temp = new int[distinctArray.length+1];
+                // Copy distinctArray to temp
                 System.arraycopy(distinctArray, 0, temp, 0, distinctArray.length);
+                // Insert the number in temp at the last index
                 temp[temp.length-1] = list[i];
+                // Copy the elements from temp to distinctArray
                 distinctArray = temp;
             }
         }
