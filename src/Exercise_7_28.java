@@ -14,4 +14,17 @@ public class Exercise_7_28 {
         }
 
     }
+
+    void combos(int[] array){
+
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+
+
+    }
+
+
+
 }
