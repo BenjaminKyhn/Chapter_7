@@ -1,5 +1,3 @@
-// Hvorfor virker denne ikke?
-
 import java.util.Scanner;
 
 public class Exercise_7_27 {
@@ -15,13 +13,11 @@ public class Exercise_7_27 {
         System.out.println("The list is " + (isSortedConstantInterval(list) ? "sorted" : "not sorted") + " in ascending order with a constant interval" );;
     }
 
-    // Hvorfor får jeg kun nogen gange "index out of bounds"?
-    // Hvorfor virker mit if statement ikke?
     public static boolean isSortedConstantInterval(int[] list){
-        for (int i = 0; i < list.length; i++) {
-            if ((list[i] < list[i+1]) && (list[i+1] - list[i] == list[i+2] - list[i+1]))
-                return true;
+        for (int i = 0; i < list.length-2; i++) {
+            if (!(list[i] < list[i+1]) || !(list[i+1] - list[i] == list[i+2] - list[i+1]))
+                return false;
         }
-        return false;
+        return true;
     }
 }
