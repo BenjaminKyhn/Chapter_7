@@ -1,6 +1,10 @@
+import java.util.Scanner;
+
 public class Exercise_7_34 {
     public static void main(String[] args) {
-        String str = "anders spiste 3kg pizza";
+        System.out.println("Enter a string to be sorted in alphabetical order: ");
+        Scanner input = new Scanner(System.in);
+        String str = input.nextLine();
         System.out.println(sort(str));
     }
 
