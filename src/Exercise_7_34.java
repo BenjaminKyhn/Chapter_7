@@ -1,7 +1,7 @@
 public class Exercise_7_34 {
     public static void main(String[] args) {
-        String memes = "anders spiste 3kg pizza";
-        System.out.println(sort(memes));
+        String str = "anders spiste 3kg pizza";
+        System.out.println(sort(str));
     }
 
     public static String sort(String s){
